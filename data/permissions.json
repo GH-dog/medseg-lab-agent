@@ -1,0 +1,17 @@
+{
+  "users": {
+    "teacher": {
+      "role": "teacher",
+      "paths": {
+        "*": "rw"
+      }
+    },
+    "student_demo": {
+      "role": "student",
+      "paths": {
+        "demos/": "r",
+        "tutorials/": "rw"
+      }
+    }
+  }
+}
