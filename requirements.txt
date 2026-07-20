@@ -1,0 +1,6 @@
+openai>=1.0.0
+numpy>=1.21.0
+requests>=2.28.0
+python-dotenv>=1.0.0
+# 可选：有 wheel 时再装，没有则用 numpy 暴力检索
+# faiss-cpu>=1.7.4
