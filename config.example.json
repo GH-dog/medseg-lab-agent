@@ -1,0 +1,36 @@
+{
+  "llm": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key_env": "LLM_API_KEY",
+    "model": "qwen-plus",
+    "coding_model": "qwen-coder-plus"
+  },
+  "ports": {
+    "orchestrator": 8000,
+    "permission": 8001,
+    "knowledge": 8002,
+    "paper": 8003,
+    "coding": 8004
+  },
+  "workspace": {
+    "root": "workspace"
+  },
+  "papers": {
+    "arxiv_categories": ["eess.IV", "cs.CV"],
+    "default_query": "medical image segmentation",
+    "max_results": 10,
+    "journals": [
+      {
+        "name": "IEEE Xplore",
+        "search_url_template": "https://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}",
+        "cookie_env": "IEEE_COOKIE"
+      },
+      {
+        "name": "SpringerLink",
+        "search_url_template": "https://link.springer.com/search?query={query}&facet-discipline=%22Computer+Science%22",
+        "cookie_env": "SPRINGER_COOKIE"
+      }
+    ]
+  },
+  "proxy": ""
+}
