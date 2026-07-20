@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+config.json
+data/vectorstore/
+*.faiss
+*.pkl
+.DS_Store
+.idea/
+.vscode/
+workspace/**
+!workspace/.gitkeep
+*.log
+pids/
